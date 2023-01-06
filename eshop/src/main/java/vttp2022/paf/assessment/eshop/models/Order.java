@@ -7,6 +7,8 @@ import java.util.UUID;
 
 import org.springframework.jdbc.support.rowset.SqlRowSet;
 
+import jakarta.json.JsonValue;
+
 // DO NOT CHANGE THIS CLASS
 public class Order {
 
@@ -63,6 +65,9 @@ public class Order {
 		li.setItem(rs.getString("item"));
 		li.setQuantity(rs.getInt("quantity"));
 		return li;
+	}
+	public JsonValue toJSON() {
+		return null;
 	}
 
 }

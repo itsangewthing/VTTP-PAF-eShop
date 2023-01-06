@@ -42,4 +42,8 @@ public class WarehouseService {
     public Object findCustomerByName(String name) {
         return null;
     }
+
+    public List<Order> getOrdersByLimitOffset(Integer limit, Integer offset) {
+        return null;
+    }
 }
