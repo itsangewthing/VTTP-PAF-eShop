@@ -35,7 +35,8 @@ public Customer findCustomerByName(String name){
 	if (name == null) {
 		return null;
 	} else{
-		return Optional.empty().orElse(HttpStatus.NOT_FOUND("error:" + "Customer ${customer_name} not found"));
+		return Optional.empty().orElse
+		(HttpStatus.NOT_FOUND("error:" + "Customer ${customer_name} not found"));
 	}
 }
 

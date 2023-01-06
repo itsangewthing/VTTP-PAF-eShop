@@ -30,7 +30,7 @@ public class OrderRepository {
 		final List<LineItem> ordList = new LinkedList<>();
 
 		while (rs.next()){
-			ordList.add(Order.create(rs));
+			ordList.add(((LineItem) Order).create(rs));
 		}
 		return Optional.of(ordList);
 	}
